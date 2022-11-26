@@ -1,0 +1,35 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    display: flex;
+    height: 100vh;
+    font-size: 2.5rem;
+}
+
+.sidebar {
+    display:flex;
+    flex-direction: column;
+    background-color: rgb(250, 178, 202);
+    color: rgb(165, 80, 108);
+    padding: 1rem;
+    gap: 3rem;
+}
+
+.main {
+    padding: 20px;
+    display: flex;
+    flex-grow: 1;
+}
+
+@media (max-width: 640px) {
+    .sidebar {
+        flex-direction: row;
+        justify-content: space-around;
+    }
+    body {
+        flex-direction: column-reverse;
+    }
+}
